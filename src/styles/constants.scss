@@ -1,0 +1,40 @@
+// Colors
+$accent-blue-light: #646cff;
+$accent-blue-lighter: #747bff;
+$accent-blue-darker: #535bf2;
+
+$primary-lighter: #fff;
+$primary-light: #f9f9f9;
+$primary-darker: #e5e5e58a;
+$primary-darker-2: #adadad;
+
+$secondary-lighter: #213547;
+$secondary-darker: 242424;
+
+$error: #c75b47;
+$calendar-grey: #e4e7ec;
+$calendar-blue: #305bcc;
+
+/* Dark/Light Theme */
+
+// Light
+$font-color: $secondary-lighter;
+$link-color: $accent-blue-light;
+$link-hover: $accent-blue-lighter;
+$bg-color: $primary-lighter;
+$bg-color-2: $primary-darker;
+$btn-color: $accent-blue-darker;
+$btn-hover: $accent-blue-light;
+
+// Dark
+// :root {
+//   [data-theme="dark"] {
+//     $font-color: $primary-darker;
+//     $link-color: $accent-blue-light;
+//     $link-hover: $accent-blue-darker;
+//     $bg-color: $secondary-darker;
+//     $bg-color-2: $secondary-lighter;
+//     $btn-color: $secondary-darker;
+//     $btn-hover: $secondary-lighter;
+//   }
+// }

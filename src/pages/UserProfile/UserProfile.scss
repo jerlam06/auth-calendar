@@ -1,0 +1,36 @@
+.UserProfile {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+
+  label {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+
+    .UserProfile__labelText {
+      display: flex;
+      align-items: center;
+      width: 150px;
+      text-align: left;
+    }
+
+    input {
+      height: 30px;
+      width: 250px;
+      font-size: 1.2rem;
+      padding: 0 0.5rem;
+      margin-top: 0.3rem;
+    }
+    button {
+      font-size: 1rem;
+    }
+  }
+
+  &__saveButton {
+    place-self: center;
+    margin-top: auto;
+  }
+}

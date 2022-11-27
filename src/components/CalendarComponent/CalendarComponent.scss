@@ -1,0 +1,42 @@
+@import "../../styles/constants.scss";
+
+.CalendarComponent {
+  background-color: $primary-lighter;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 4px #9b9b9b36;
+
+  h3 {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 1rem;
+
+    button {
+      margin-right: 0.5rem;
+      font-size: 0.9rem;
+      padding: 0.8rem;
+      width: 100px;
+
+      &.CalendarComponent__button--action {
+        background-color: #3082ff;
+      }
+
+      &.CalendarComponent__button--cancel {
+        background-color: #fff;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+        color: #404040;
+      }
+    }
+  }
+}

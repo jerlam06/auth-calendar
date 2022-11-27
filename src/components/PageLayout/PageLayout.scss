@@ -1,0 +1,49 @@
+.PageLayout {
+  height: 100%;
+
+  header {
+    display: flex;
+    height: 80px;
+
+    .PageLayout__headerContent {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1280px;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+
+      .PageLayout__logo {
+        width: 40px;
+      }
+      .PageLayout__title {
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+
+      nav {
+        margin-left: auto;
+
+        ul {
+          list-style: none;
+          display: flex;
+
+          li {
+            margin-left: 1rem;
+
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 80px);
+  }
+}

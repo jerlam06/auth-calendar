@@ -1,0 +1,70 @@
+@import "../../../styles/constants.scss";
+
+.CalendarTime {
+  margin-left: 1rem;
+
+  .CalendarTime__value {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    margin-left: 0.6rem;
+
+    span {
+      font-size: 0.8rem;
+      color: #8b8b8b;
+      margin-right: 0.5rem;
+    }
+
+    &:has(+ ul:hover) {
+      .Highlight {
+        border: 1px solid $calendar-blue;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    height: 245px;
+    width: 170px;
+    overflow: auto;
+    padding-inline-start: 0;
+    margin-left: 0.5rem;
+
+    .CalendarTime__hour {
+      padding: 0.2rem 2rem;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 0.9rem;
+
+      &--selected {
+        background-color: $calendar-grey;
+        font-weight: 600;
+      }
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: $primary-darker-2 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $primary-darker-2;
+    border-radius: 6px;
+    border: 3px solid #ffffff;
+  }
+}

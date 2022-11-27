@@ -1,0 +1,80 @@
+@import "../../../styles/constants.scss";
+
+.CalendarDate {
+  .CalendarDate__value {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+
+    span {
+      font-size: 0.8rem;
+      color: #8b8b8b;
+      margin-right: 0.5rem;
+    }
+
+    &:has(+ .EgCLV:hover) {
+      .Highlight {
+        border: 1px solid $calendar-blue;
+      }
+    }
+  }
+
+  // Calendar
+  .EgCLV {
+    border: none;
+    padding: 0;
+
+    // Month year section
+    .cuRXYf {
+      margin-bottom: 1rem;
+
+      // Month year
+      .btFINQ {
+        font-size: 0.9rem;
+        text-align: left;
+        color: $calendar-blue;
+      }
+
+      button:focus {
+        outline: none;
+      }
+    }
+
+    // Week days
+    .kVEIdA {
+      font-size: 0.9rem;
+      color: $primary-darker-2;
+      width: 32px;
+      height: 32px;
+    }
+
+    // Days
+    .cIFnvd {
+      color: $secondary-lighter;
+      font-size: 0.9rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &[aria-pressed="true"] {
+        font-weight: 700;
+        background-color: $calendar-grey;
+        outline: none;
+        border: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    // gap
+    .jqyzRc {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

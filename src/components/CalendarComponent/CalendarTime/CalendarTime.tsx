@@ -17,6 +17,7 @@ export default function CalendarTime({ hours, value, onChange }: CalendarTimePro
       <ul>
         {hours.map((h) => (
           <li
+            key={h}
             onClick={() => onChange(h)}
             className={"CalendarTime__hour" + (value === h ? " CalendarTime__hour--selected" : "")}
           >
